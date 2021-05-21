@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+      <div class="header_div">
+        <h1>Take a Snap</h1>
+    </div>
+    <labe>Webcam View:</label>    
+      <div id="camera"></div>
+      <br><br>
+      <div id="result"></div>
+          <br><br>
+<br><br>
+<br><br>
+<button type="button" class="custom-btn btn-10" onclick="take_snapshot();" >Capture Image</button> 
+          <br><br> 
+          <button type="button" class="custom-btn btn-11" onclick="check();">Identify Image</button>
+           <br><br>
+      
+      
+          <h4 id="result_object_name">Object: </h4>
+      <h4 id="result_object_accuracy">Accuracy: </h4>
+      
+  
+
+      
+    </center>
+
+
+    
+<script src="camera.js"></script>
+  </body>
+</html>
